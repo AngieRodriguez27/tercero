@@ -1,0 +1,6 @@
+package temperatura;
+public interface ITemperaturas {
+    public double conversiones(double a);
+   
+    
+}
