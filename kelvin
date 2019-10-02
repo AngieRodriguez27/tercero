@@ -1,0 +1,9 @@
+package temperatura;
+public class Kelvin implements ITemperaturas{
+
+    @Override
+    public double conversiones(double a) {
+       return a+273.15;
+    }
+    
+}
