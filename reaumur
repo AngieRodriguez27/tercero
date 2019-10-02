@@ -1,0 +1,7 @@
+package temperatura;
+public class Reaumur implements ITemperaturas {
+    
+    @Override
+    public double conversiones(double a) {
+        return 4*a/5;
+    }
