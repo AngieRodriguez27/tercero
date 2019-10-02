@@ -1,0 +1,20 @@
+package temperatura;
+
+import javax.swing.JOptionPane;
+
+public class Temperatura{ 
+        ITemperaturas re,fa,ke;
+    public static void main(String[] args) {
+        Temperatura t = new Temperatura();
+        t.imprimir();
+    }
+    public void imprimir(){
+        re = new Reaumur();
+        fa = new Fahrenheit();
+        ke = new Kelvin();
+        JOptionPane.showMessageDialog(null,"Conversion celsius a Reaumur: "+re.conversiones(Double.parseDouble(JOptionPane.showInputDialog("digite temperatura: "))));
+        JOptionPane.showMessageDialog(null,"Conversion celsius a Fahrenheit: "+fa.conversiones(Double.parseDouble(JOptionPane.showInputDialog("digite temperatura: "))));
+        JOptionPane.showMessageDialog(null,"Conversion celsius a Kelvin: "+ke.conversiones(Double.parseDouble(JOptionPane.showInputDialog("digite temperatura: "))));
+    }
+    
+}
